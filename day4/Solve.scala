@@ -51,7 +51,7 @@ def solve2(input: Vector[String]): Int = {
   val input = readInput(path)
   // printInput(input)
 
-  val result = solve2(input)
+  val result = solve(input)
   println(s"The result is: $result")
 }
 
