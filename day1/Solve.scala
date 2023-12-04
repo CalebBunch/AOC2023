@@ -132,6 +132,8 @@ def solve2(inp: Vector[String]): Int =
   val input = readInput(path)
   // printInput(input)
 
-  val result = solve2(input)
-  println(s"The result is: $result")
+  val part1 = solve1(input)
+  val part2 = solve2(input)
+  println(s"Part 1: $part1")
+  println(s"Part 2: $part2")
 }
