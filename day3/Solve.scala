@@ -42,7 +42,7 @@ def checkNeighbors(i1: Int, i2: Int, v: Vector[String]): Boolean = {
   res
 }
 
-def solve(input: Vector[String]): Int = {
+def solve1(input: Vector[String]): Int = {
   var res: Int = 0
   for ((line, i1) <- input.zipWithIndex) {
     var idx: Int = -1
@@ -157,6 +157,8 @@ def solve2(input: Vector[String]): Int = {
   val input = readInput(path)
   // printInput(input)
 
-  val result = solve2(input)
-  println(s"The result is: $result")
+  val part1 = solve1(input)
+  val part2 = solve2(input)
+  println(s"Part 1: $part1")
+  println(s"Part 2: $part2")
 }
