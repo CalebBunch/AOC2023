@@ -24,19 +24,19 @@ def solve(input: Vector[String]): Int = {
 def isValidIndex(row: Int, numRows: Int): Boolean =
   row >= 0 && row < numRows
 
-def search(v: Vector[String], index: Int, test: Int): (Int, Int) = {
+def search(v: Vector[String], index: Int, total: Int): (Int, Int) = {
   if (!isValidIndex(index, v.length)) {
-    (0, test)
+    (0, total)
   } else {
     val s = v(index).split("\\s+").filter(_.nonEmpty)
     val copies = s.length - s.distinct.length
 
-    val (_, updatedTest) = (index + 1 until index + copies + 1)
-      .foldLeft((0, test)) { case ((_, accTest), i) =>
-        search(v, i, accTest)
+    val (_, updatedTotal) = (index + 1 until index + copies + 1)
+      .foldLeft((0, total)) { case ((_, accTotal), i) =>
+        search(v, i, accTotal)
       }
 
-    (0, updatedTest + 1)
+    (0, updatedTotal + 1)
   }
 }
 
@@ -51,7 +51,7 @@ def solve2(input: Vector[String]): Int = {
   val input = readInput(path)
   // printInput(input)
 
-  val result = solve(input)
+  val result = solve2(input)
   println(s"The result is: $result")
 }
 
