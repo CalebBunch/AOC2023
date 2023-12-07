@@ -98,15 +98,10 @@ def solve2(input: Array[String]): Long = {
   val input = readInput(path)
   // printInput(input)
 
-<<<<<<< HEAD
   val part1: Long = solve1(input)
   val part2: Long = solve2(input)
   // Part 2 uses a naive bruteforce approach
   // and runs for 11 minutes on my machine
   println(f"Part 1: $part1")
   println(f"Part 2: $part2")
-=======
-  val result = solve1(input)
-  println(s"The result is: $result")
->>>>>>> 895f5ddef5ffaf32f981802b0662f9f5e19bc5fd
 }
