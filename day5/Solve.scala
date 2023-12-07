@@ -30,7 +30,6 @@ def solve1(input: Array[String]): Long = {
           j += 1
         }
       }
-      var test = res.mkString(" ")
       ranges = Array.empty[(Long, Long, Long)]
 
     } else if (e(0).isDigit) {
