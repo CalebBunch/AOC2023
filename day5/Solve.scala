@@ -10,7 +10,7 @@ def printInput(input: Array[String]): Unit = {
   }
 }
 
-def solve(input: Array[String]): Long = {
+def solve1(input: Array[String]): Long = {
   var res: Array[Long] = Array()
   var ranges: Array[(Long, Long, Long)] = Array()
 
@@ -56,6 +56,6 @@ def solve(input: Array[String]): Long = {
   println(Long.MaxValue)
   // printInput(input)
 
-  val result = solve(input)
+  val result = solve1(input)
   println(s"The result is: $result")
 }
