@@ -12,7 +12,7 @@ cd AdventOfCode2023
 git clone https://github.com/CalebBunch/AOC2023
 ```
 ```
-cd day1
+cd AOC2023/day1
 ```
 ```
 scala Solve.scala
