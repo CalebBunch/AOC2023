@@ -1,7 +1,7 @@
 # AOC2023
 Solutions for Advent of Code 2023 in Scala
 
-If you want to run a solution:
+If you want to run a solution (Make sure you have the input data in the same directory in a file called input.txt):
 ```
 mkdir AdventOfCode2023
 ```
