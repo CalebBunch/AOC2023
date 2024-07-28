@@ -5,12 +5,7 @@
 Solutions for Advent of Code 2023 in Scala (only up to day 9)
 
 If you want to run a solution (Make sure you have the input data in the same directory in a file called input.txt):
-```
-mkdir AdventOfCode2023
-```
-```
-cd AdventOfCode2023
-```
+
 ```
 git clone https://github.com/CalebBunch/AOC2023
 ```
